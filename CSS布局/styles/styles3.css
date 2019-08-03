@@ -1,0 +1,29 @@
+/* 第3种方法 float+margin-left */
+
+.wrapper {
+    overflow: auto; /* 清除浮动，记住了，为什么用clear：both没用？ */
+    padding: 15px 20px;
+    border: 5px solid #ddd;
+   box-sizing: content-box;
+}
+
+
+.left {
+    float: left;
+    width: 120px; /* 固定宽度 */
+    border: 5px solid #ddd;
+    box-sizing: border-box;
+}
+.right {
+    margin-left: 140px;
+    box-sizing: border-box;
+    border: 5px solid #ddd;
+    width: calc(100% - 140px); /* 计算宽度 */
+}
+
+    /* 步骤：
+    一、选择布局方式float
+    二、清除浮动
+    三、box-sizing设置
+    四、宽度设置
+    */ 

@@ -1,0 +1,30 @@
+/* 第7种方法 grid */
+.wrapper {
+	display: grid; 
+    grid-template-columns: 120px 1fr; /* 注意代码顺序 */
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    align-items: start;
+    padding: 15px 20px;
+    border: 5px solid #ddd;
+    
+}
+
+.left {
+	 grid-column: 1;
+     box-sizing: border-box;
+    border: 5px solid #ddd; 
+}
+
+.right {
+     grid-column: 2;
+	 box-sizing: border-box;
+    border: 5px solid #ddd;  
+}
+
+    /* 步骤：
+    一、设置布局方式grid
+    二、设置列宽和行高
+    三、指定项目位置 grid-column
+    四、对齐方式
+    */ 

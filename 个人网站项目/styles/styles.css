@@ -1,0 +1,21 @@
+html{
+
+}
+body{
+	width: 1366px;
+	height: auto;
+	background-color: #F8F8F8;
+
+}
+aside{
+	margin: o 1081 141 0;
+	background-color: white;
+
+}
+#button-contact{
+	font-size: 18px;
+	font-family: pingfang;
+	padding: 12 33 12 33;
+	background-color: #2668FF;
+
+}

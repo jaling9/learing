@@ -1,0 +1,50 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+/* Your CSS below here */
+.container{
+    display: grid;
+    flex-direction: column;
+
+}
+
+a{  
+    font-size: 1.8rem;
+    font-weight: bold;
+    outline: none;
+    text-decoration: none;
+    padding: 1rem 3rem ;
+    width: 10rem;
+    border: 0.2rem solid #333 ;
+    color: black;
+    border-radius: 0.8rem;
+    background-color: #ccc;
+    background-image: linear-gradient(to right bottom,#ccc,#eee);
+}
+
+a:link{
+    color: blue;
+}
+
+a:active{
+
+}
+
+a:hover{
+    color:blue;
+    background-color: blue;
+    border: 0.2rem solid blue;
+    box-shadow: 4px 16px 24px rgba(0, 0, 255, 0.2),
+                4px 17px 24px rgba(0, 0, 255, 0.1),
+                4px 18px 24px rgba(0, 0, 255, 0.1),
+                4px 19px 24px rgba(0, 0, 255, 0.1),
+                4px 20px 24px rgba(0, 0, 255, 0.1),
+                4px 21px 24px rgba(0, 0, 255, 0.1);
+}

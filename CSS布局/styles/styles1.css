@@ -1,0 +1,43 @@
+
+/* 第1种方法 双inline-block */
+.wrapper {
+	box-sizing: content-box; /* 可以不设置吗？ */
+    padding: 15px 20px;
+    border: 5px solid #ddd;
+    font-size: 0; /* 消除空格字符影响 */
+}
+
+
+.left {
+	
+	display: inline-block; /* 布局方法 */
+	vertical-align: top; /* 顶端对齐 */
+	box-sizing: border-box; /* 重点 */
+	font-size: 14px;
+    width: 120px; /* 固定宽度 */
+    border: 5px solid #ddd;
+    
+}
+.right {
+	display: inline-block; /* 重点 */
+	vertical-align: top; /* 顶端对齐 */
+	box-sizing: border-box; /* 重点 */
+	font-size: 14px;
+    margin-left: 20px; /* 还是要用到margin-left */
+    border: 5px solid #ddd;
+    width: calc(100% - 140px); /* 计算宽度 */
+}
+
+    /* 步骤：
+    一、选择布局方式
+    二、对齐-作为两个inline-block的盒子，必须设置vertical-align来使其顶端对齐。
+    三、box-sizing设置
+    四、宽度设置
+    五、消除字符影响
+    */ 
+
+
+
+
+
+

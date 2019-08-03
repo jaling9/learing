@@ -1,0 +1,25 @@
+/* 第6种方法 双inline-block */
+.wrapper {
+	display: flex;
+    padding: 15px 20px;
+    border: 5px solid #ddd;
+    align-items: flex-start;
+}
+
+.left {
+	flex: 0 0 auto;	
+    width: 120px; /* 固定宽度 */
+    border: 5px solid #ddd; 
+}
+
+.right {
+	flex: 1 1 auto;
+    border: 5px solid #ddd;  
+}
+
+    /* 步骤：
+    一、设置布局方式
+    二、设置对齐方式
+    三、设置flex属性
+    四、宽度设置
+    */ 

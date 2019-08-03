@@ -1,0 +1,30 @@
+/* 第5种方法 float+BFC 不需要计算左侧盒子宽度。只需要设置两个盒子之间的间隔。 */
+
+.wrapper {
+	overflow: auto; /* 清除浮动，记住了，为什么用clear：both没用？ */
+    padding: 15px 20px;
+    border: 5px solid #ddd;
+   
+}
+
+
+.left {
+	float: left;
+    margin-right: 10px; /* 左边向右靠，右边向左靠。*/
+    width: 120px; /* 固定宽度 */
+    border: 5px solid #ddd;
+    
+}
+.right {
+    margin-left: 0px;
+    overflow: auto;
+    border: 5px solid #ddd;
+    
+}
+
+    /* 步骤：
+    一、选择布局方式float
+    二、清除浮动
+    三、左靠右，右靠左
+    四、设置右边BFC
+    */ 

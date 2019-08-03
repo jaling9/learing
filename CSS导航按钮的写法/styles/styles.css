@@ -1,0 +1,47 @@
+body,html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  /*dispaly如果改为block将会变为竖着的导航栏*/
+  display: inline-block;
+  width: 20%;
+  /*margin-right: 0.625%;*/
+  margin-right: 0;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+  font-weight: bold;
+}
+
+li:last-child a {
+  margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+  background: #000;
+}
+
+a:hover {     
+  background: #333;
+  box-shadow: 0px 12px 48px rgba(0,0,0,0.5)
+  
+}
+
+a:active {
+  background: #333;
+  color: white;
+}

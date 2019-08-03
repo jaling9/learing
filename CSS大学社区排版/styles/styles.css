@@ -1,0 +1,278 @@
+/*字体样式*/
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: regular;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-thin-webfont.woff2') format('woff2'),
+         url('montserrat-thin-webfont.woff') format('woff');
+    font-weight: thin;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-black-webfont.woff2') format('woff2'),
+         url('montserrat-black-webfont.woff') format('woff');
+    font-weight: black;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-light-webfont.woff2') format('woff2'),
+         url('montserrat-light-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('montserrat-medium-webfont.woff2') format('woff2'),
+         url('montserrat-medium-webfont.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+
+}
+
+
+
+
+/* 文档设置 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat';
+  font-size: 10px;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  line-height: 1.5;
+}
+
+
+/* 排版 */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+/*问题二，首行缩进失败*/
+section p::first-line {
+  text-indent: 2rem;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* 头部和页脚 */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* 样式 */
+
+h1{
+  text-align: center;;
+  font-weight: black;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+}
+
+h2,h3,h4{
+ 
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+p{
+font-weight: regular;
+letter-spacing: 0.05rem;
+word-spacing: 0.1rem;
+}
+
+/*文本内容样式*/
+section a:hover,section a:link,section a:focus,section a:visited{
+  color:orange;
+  outline: none;
+  text-decoration: none;
+}
+
+/*
+  section a:visited{
+  outline: 0.1rem solid;
+  color: #999999;
+}*/
+
+section a:hover,section a:focus{
+  border-bottom: 0.1rem solid;
+  background-color: #333;
+}
+
+section a:active{
+  color: #fff;
+  border-bottom: 0.1rem solid;
+  background-color: red;
+
+}
+/*问题一，图标引入失败*/
+section a[href*="https"]{
+  background: url(external-link-52.png) no-repeat center right ;
+  background-size: 0.8rem 0.8rem; 
+  padding-right:1rem; 
+  margin-top:0rem;
+}
+
+section ul li,aside ul li{
+  line-height: 1.5;
+  font-weight: regular;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+  
+}
+section ul{
+  list-style-type: square;
+}
+
+/*问题三，这里又插入图片失败*/
+section ul li{
+  background:url(images/external-link-52.png);
+  background-position: 0; 
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+
+}
+
+/*侧边栏样式*/
+aside a{
+  color:orange;
+  outline: none;
+  text-decoration: none;
+}
+
+/*
+  aside a:visited{
+  outline: 0.1rem solid;
+  color: #999999;
+}*/
+
+aside a:hover,aside a:focus{
+  border-bottom: 0.1rem solid;
+  background-color: #333;
+}
+
+aside a:active{
+  color: #fff;
+  border-bottom: 0.1rem solid;
+  background-color: red;
+
+}
+
+/*导航栏样式*/
+nav ul{
+  margin:3rem 1rem auto auto;
+ 
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav a{
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+
+  margin: 1.2rem 1.5rem ;
+  padding: 1rem 0.1rem;  
+  border: 0.02rem solid #666;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color:#000;
+  background-color: #fff;
+}
+
+
+nav a:focus{
+  color: orange;
+  background-color: #fff;
+  border: 0.02rem solid orange;
+  box-shadow: 0rem 3rem 3rem rgba(0,0,0,0.1)
+}
+
+nav a:hover{
+  color: orange;
+  background-color: #fff;
+  border: 0.02rem solid orange;
+  box-shadow: 0rem 3rem 3rem rgba(0,0,0,0.1)
+  
+}
+
+nav a:active{
+  color: orange;
+  background-color: #fff;
+  border: 0.02rem solid orange;
+  box-shadow: 0rem 3rem 3rem rgba(0,0,0,0.1)
+}
+
+nav a:visited{
+  color:#333;
+  background-color: #666;
+}
