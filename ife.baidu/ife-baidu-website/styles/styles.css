@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 10px;
+    font-family: 'montserrat' , sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #f8a6a6;
+}
+
+/* 清除浏览器的默认样式 */
+    html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+    dl,dt,dd,ul,ol,li,pre,form,fieldset,object,code,
+    em,span,var,legend,button,input,textarea,th,td,a,
+    img,header,footer,nav,aside,audio,datalist,
+    section { 
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0; 
+    }
+
+/* 清除表单部件的默认样式 */
+    input, textarea, select, button {
+        font-family : inherit;
+        font-size   : 100%;
+        margin: 0;
+        -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+        -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+                box-sizing: border-box;
+    }
+
+/*清除内外边距*/
+    h1,h2,h3,h4,h5,h6 { 
+        font-weight:normal;font-size:100%; 
+
+    }
+/*设置默认字体*/
+
+
+
+
+
+
+/* 头部区域 */
+header {
+    overflow: hidden; /* 高度设置 */
+    background: url(../images/background01@1x.png) no-repeat ;
+    background-size: 100%;
+}
+
+    .header-text {
+        margin-top: 8rem ;
+        margin-bottom: 2rem;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 4.2rem;
+            font-weight: 200;
+            text-align: center;
+        }
+
+        header p {
+            margin-top: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 1.6rem;
+            font-weight: 200;
+            text-align: center;
+        }
+
+    .header-contact {
+        margin: 2rem auto;
+        width: 80%;
+        border: rgba(255, 255, 255, 0.2) solid 0.1rem;
+        border-radius: 2px;
+    }
+        .header-contact p:nth-child(1) {
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight:300;
+        }
+
+        .header-contact p:nth-child(2) {
+            color: #bdbcbc;
+            font-size: 1.2rem;
+            font-weight:300;
+        }
+
+        .header-contact-form {
+            text-align: center;
+            width: auto;
+            margin: 2rem;
+        }
+
+/* 样式化表单 */
+            [id="email"], [id="pwd"]{
+                display: inline-block;
+                margin: 1.5rem auto;
+                width: 80%;
+                height: 4rem;
+                background: none;
+                border: rgba(255, 255, 255, 0.2) solid 0.1rem;
+            }
+
+            [type="submit"] {
+                display: inline-block;
+                margin: 0 auto;
+                width: 40%;
+                height: 4rem;
+            }
+
+
+/* 头部媒体查询 */
+    @media screen and (min-device-width: 376px) and (max-device-width:768px){
+        header {background: url(../images/background01@2x.png) no-repeat ;
+        }
+
+        header h1 {
+            font-size: 6.2rem;
+        }
+
+        header p {
+            font-size: 2rem;
+        }
+  
+    }
+
+
+
+    @media screen and (min-device-width: 769px) {
+        header {background: url(../images/background01@2x.png) no-repeat ;
+        }
+
+        header h1 {
+            font-size: 6.2rem;
+        }
+
+        header p {
+            font-size: 2rem;
+        }
+
+        [id="email"], [id="pwd"]{
+            width: 30%;
+            height: 5rem;
+        }
+
+        [type="submit"] {
+        width:10%;
+        height: 5rem;
+        }
+
+    }
+
+/* 主要内容区域 */
+.content1 {
+    overflow: hidden;
+    background: #ffffff;
+    width: 100%;
+    
+}
+
+    .content1-introduce {
+        width: 90%;
+        margin: 4rem auto;
+        text-align: center;
+    }
+
+        .content1-introduce div {
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #141414;
+            margin: 2.5rem auto;
+            text-transform: uppercase;
+        }
+
+        .content1-introduce p {
+            font-size: 3.6rem;
+            font-weight: 200;
+            color: #141414;
+        }
+
+    .content1-details {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+        .content1-details1 {
+            float: left;
+            margin: 1rem auto;
+        }
+
+
+            .details1-icon {
+                float: left;
+                width: 20%;
+                margin-top: .5rem;
+               
+            }
+
+                .details1-icon img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .details1-text {
+                float: left;
+                width: 80%;
+                padding: 0 1rem;
+            }
+
+                .details1-text-h3 {
+                    font-size: 2rem;
+                    font-weight: 300;
+                    color: #141414;
+                    margin: 1.5rem auto;
+                }
+
+                .details1-text p {
+                    font-size: 1.6rem;
+                    font-weight: 200;
+                    color: #b8b5b5;
+                }
+
+
+/* content1媒体查询 */
+
+    @media screen and (min-device-width:426px) {
+        .details1-icon {
+            width: 60px;
+            height: 60px;
+            margin-top: .5rem;
+        }
+
+        .content1-details1 {
+            padding: 1rem;
+        }
+
+    }
+
+    @media screen and (min-device-width:769px) {
+        .content1-details1 {
+            float: left;
+            width:50%;
+            height: 12rem;
+            margin: auto;
+        }
+    }
