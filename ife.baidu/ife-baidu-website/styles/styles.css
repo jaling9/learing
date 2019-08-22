@@ -120,7 +120,7 @@ header {
 
 
 /* 头部媒体查询 */
-    @media screen and (min-device-width: 376px) and (max-device-width:768px){
+    @media screen and (min-width: 376px) and (max-width:768px){
         header {background: url(../images/background01@2x.png) no-repeat ;
         }
 
@@ -136,7 +136,7 @@ header {
 
 
 
-    @media screen and (min-device-width: 769px) {
+    @media screen and (min-width: 769px) {
         header {background: url(../images/background01@2x.png) no-repeat ;
         }
 
@@ -233,7 +233,7 @@ header {
 
 /* content1媒体查询 */
 
-    @media screen and (min-device-width:426px) {
+    @media screen and (min-width:426px) {
         .details1-icon {
             width: 60px;
             height: 60px;
@@ -246,7 +246,7 @@ header {
 
     }
 
-    @media screen and (min-device-width:769px) {
+    @media screen and (min-width:769px) {
         .content1-details1 {
             float: left;
             width:50%;
